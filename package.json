@@ -2,6 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
+        "start_sail": "./vendor/bin/sail up",
         "build": "vite build"
     },
     "devDependencies": {
