@@ -26,11 +26,5 @@ jobs:
       - name: Generate app key
         run: php artisan key:generate
 
-      - name: Run Sail
-        run: vendor/bin/sail up
-
       - name: Execute tests
-        run: vendor/bin/sail artisan test
-
-      - name: Stop Sail
-        run: vendor/bin/sail stop
+        run: vendor/bin/phpunit tests/
