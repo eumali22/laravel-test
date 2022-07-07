@@ -17,6 +17,11 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
  
     steps:
+    - name: Debug .env file
+      run: |
+        cp .env.ci .env
+        cat .env
+
     - uses: actions/checkout@v1
       with:
         fetch-depth: 1
