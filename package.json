@@ -3,6 +3,7 @@
     "scripts": {
         "dev": "vite",
         "start_sail": "./vendor/bin/sail up",
+        "test_sail": "./vendor/bin/sail artisan test",
         "build": "vite build"
     },
     "devDependencies": {
