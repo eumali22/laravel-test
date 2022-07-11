@@ -5,11 +5,14 @@ export default function Layout({ children }) {
   return (
     <main>
       <header>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <ul>
+          <li><Link href="/helloworld">Hello World page</Link></li>
+          <li><Link href="/about">About</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
+        </ul>
       </header>
-      <article>{children}</article>
+      
+      <article style={{backgroundColor: 'grey', padding: 20}}>{children}</article>
     </main>
   )
 }

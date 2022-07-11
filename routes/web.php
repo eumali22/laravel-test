@@ -32,4 +32,12 @@ Route::get('/helloworld', function () {
   return Inertia::render('HelloWorld');
 });
 
+Route::get('/about', function () {
+  return Inertia::render('About');
+});
+
+Route::get('/contact', function () {
+  return Inertia::render('Contact');
+});
+
 require __DIR__.'/auth.php';

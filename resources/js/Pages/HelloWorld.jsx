@@ -10,6 +10,6 @@ const HelloWorld = (props) => {
   );
 };
 
-// HelloWorld.layout = page => <Layout children={page} title="HelloWorld" />
+HelloWorld.layout = page => <Layout children={page} title="HelloWorld" />
 
 export default HelloWorld;
